@@ -1,9 +1,9 @@
-# from playsound import playsound
 
-# playsound('G:\\ProjectWorkHere\\DisplayChangesDetection\\Sound\\beep-10.wav')
-
+import os
 from playsound import playsound
 
-def play():
-    playsound('Sound/error.mp3')
+def PLAY():
+    playsound(os.getcwd()+'/'+'Error.mp3')
     
+# PLAY()
+

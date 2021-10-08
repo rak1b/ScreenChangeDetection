@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(13, 12, 24);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      }
+
+      p {
+        color: beige;
+      }
+
+      .container{
+        width: 90px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button>Start</button> -->
+
+    <div class="container">
+      <p>Margin</p>
+      <p><span id="number">44.55</span> USD</p>
+    </div>
+
+    <script>
+
+        function increase(){
+            var numText = document.getElementById('number')
+            var num = parseFloat(numText.textContent)
+            num = num + 0.3
+            numText.innerText=num.toFixed(2)
+        }
+        setInterval(increase,5000)
+
+    </script>
+  </body>
+</html>
