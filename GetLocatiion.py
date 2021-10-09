@@ -1,7 +1,7 @@
 import pyautogui as pg
 import time
 
-target_image = 'img/Target.png'
+target_image = 'img/target.png'
 
 time.sleep(6)
 locate = pg.locateOnScreen(target_image)
