@@ -4,6 +4,7 @@ from pathlib import Path
 import datetime as dt
 import os
 from playsound import playsound
+import keyboard
 
 
 
@@ -11,7 +12,7 @@ from playsound import playsound
 target_image = 'img/target.png'
 
 #Find the cordinate by using the Getlocation.py file
-cordinate = (881,555,117,100)
+cordinate =(867,531,150,127)
 
 #time to excute code after running the program
 wait = 6
@@ -72,6 +73,8 @@ def press_button():
     
 try:
     while(True):
+        if keyboard.is_pressed("q"):
+            break
         if count==1:
             time.sleep(wait)
             count+=1
@@ -81,11 +84,11 @@ try:
         if(element!=None):
             print('Visible')
         else:
-            print('Not Visible')
             press_button()
+            take_ss()
             if Sound:
                 PLAY()
-            take_ss()
+            
             
 except KeyboardInterrupt:
     print("Code Stopped")
