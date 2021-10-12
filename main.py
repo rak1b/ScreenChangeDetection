@@ -12,7 +12,7 @@ import keyboard
 target_image = 'img/target.png'
 
 #Find the cordinate by using the Getlocation.py file
-cordinate = (862,546,147,117)
+cordinate = (737,188,393,227)
 
 #time to excute code after running the program
 wait = 6
